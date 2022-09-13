@@ -1,0 +1,7 @@
+.modalBody{
+    opacity: 0%;
+}
+.modalBody.show {
+    opacity: 100%;
+    pointer-events: all;
+  }
