@@ -140,3 +140,22 @@ const render = (book) => {
         }
     })
 }
+
+//author validation
+
+const ayo = document.querySelector('.author');
+const emailError = document.querySelector(".error");
+
+author.addEventListener('input', (event) => {
+    if (author.validity.valid) {
+        emailError.textContent = ''
+    } else {
+        showError();
+    }
+});
+
+function showError() {
+    if (author.validity.tooShort) {
+        emailError.textContent = "Author name should be at least 7 characters long."
+    }
+}

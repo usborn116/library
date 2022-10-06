@@ -18,7 +18,8 @@
         <form id="Form" action="" method="POST">
 
             <label for="author">Author:</label><br/>
-            <input type="text" id="author" class="author" placeholder="Stephen King" required/> <br />
+            <input type="text" id="author" class="author" minlength="7"/> <br />
+            <span class="error"></span><br>
     
             <label for="title">Title:</label><br/>
             <input type="text" id="title" class="title" placeholder="Salem's Lot" required/> <br />

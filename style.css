@@ -5,3 +5,8 @@
     opacity: 100%;
     pointer-events: all;
   }
+
+.error {
+    color:red;
+    font-size: 20px;
+}
